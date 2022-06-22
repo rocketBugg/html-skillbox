@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'Font', sans-serif;
+}
+
+
+/* globe */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-offset {
+  padding-bottom: 70px;
+}
+
+/* header */
+.header {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.header-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ .header-left {
+  align-items: center;
+  padding-right: auto;;
+}
+
+.header-right {
+  align-items: center;
+}
+/*  */
+.header-top {
+  min-width: 1200px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+ .header-bottom {
+  min-width: 1200px;
+  max-height: 70px;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.navigation-item:first-child {
+  margin-left: 45px;
+}
+
+.navigation-item-btn:not(:last-child) {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+/* offer */
+
+.test {
+ max-width: 1200px;
+}
+
+.card-box {
+  justify-content: space-between;
+}
+
+.offer-box {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.left-cards {
+ flex-basis: 50%;
+ margin-right: 12px;
+ margin-left: 0;
+}
+
+.right-cards {
+  flex-basis: 50%;
+  margin-left: 12px;
+}
+
+.offer-box-right {
+  min-height: 100%;
+}
+
+.offer-list {
+  flex-direction: column;
+}
+
+/* about-us */
+.about-us-block {
+  flex-direction: column;
+}
+/* services */
+
+.services-container {
+ flex-direction: column;
+}
+
+.services {
+  flex-wrap: wrap;
+}
+
+.services-desc {
+ width: 50%;
+}
+
+/* adavntages */
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantage {
+  width: 25%;
+}
+
+/* placements */
+
+.placement {
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  width: 30%;
+  margin-top: 24px;
+}
+
+.placement-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
