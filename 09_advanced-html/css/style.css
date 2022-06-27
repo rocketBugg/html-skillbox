@@ -682,7 +682,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 27px;
   color: #000000;
   margin-bottom: 15px;
 }
@@ -706,6 +706,7 @@ body {
   border: 0;
   appearance: none;
   overflow: hidden;
+  width: 133px;
   background-image: url('/img/arrow-down.svg');
   background-repeat: no-repeat;
   background-position: center right;
@@ -731,13 +732,14 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts-list {
   background: #FFFFFF;
   border-radius: 15px;
-  width: 1170px;
+  min-width: 1170px;
   min-height: 618px;
   padding: 45px 45px;
   flex-direction: column;
   background-image: url('/img/reception.jpg');
   background-repeat: no-repeat;
   background-position: 472px 45px;
+  background-size: 56% 82.5%;
 }
 
 .contacts-header {
@@ -880,6 +882,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer-center-mail {
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .footer-right-list {
@@ -905,4 +908,34 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   line-height: 30px;
   color: #FFFFFF;
+}
+
+.trip-adv {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/tripadv.svg');
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ok {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/ok.svg');
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vk {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/vk.svg');
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
