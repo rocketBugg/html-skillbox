@@ -273,7 +273,7 @@ body {
 }
 
 .card-desc {
-  max-width: 433px;
+  max-width: 100%;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;

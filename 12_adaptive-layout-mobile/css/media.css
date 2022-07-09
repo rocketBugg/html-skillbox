@@ -1,11 +1,8 @@
-/* @media ((max-width:3840px)) {
-.container {
-  margin: 0 auto;
-  padding: 0 70px;
-}
-} */
-
 @media (max-width:1920px) {
+.header-left {
+    margin-right: 300px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 50px;
@@ -106,6 +103,11 @@
 
 }
 
+@media (max-width:1300px) {
+.header-left {
+  margin-right: 0px;
+}
+}
 
 @media (max-width:1024px) {
 
@@ -249,7 +251,6 @@
 
 .footer_btn {
   padding: 18px 28px;
-  margin-left: -27px;
   max-width: 241px;
 }
 
@@ -275,7 +276,7 @@
 
 .burger {
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 150px;
   width: 30px;
   height: 20px;
 }
@@ -330,7 +331,7 @@
 }
 
 .right-cards {
-  min-height: 502px;
+  min-height: 100%;
 }
 
 .stages__title {
@@ -406,7 +407,7 @@
 }
 
 .burger {
-  margin-right: 34px;
+  margin-right: 150px;
 }
 
 .header__logo {
@@ -480,6 +481,7 @@
   border: contain;
   min-height: 360px;
   margin-bottom: 32px;
+  background-size: 100% 53%;
 }
 
 .left-card-descr {
@@ -701,4 +703,10 @@
   margin-right: 16px;
 }
 
+}
+
+@media (max-width:425px) {
+  .burger {
+    margin-right: 70px;
+  }
 }
