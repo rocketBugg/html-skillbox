@@ -147,6 +147,7 @@ body {
 .order-container {
   padding: 100px 80px;
   flex-direction: column;
+  justify-content: space-between;
   background: url('/img/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -584,7 +585,6 @@ body {
 
 .faq-container {
   max-width: 1770px;
-  min-height: 658px;
   top: 12px;
 }
 
@@ -597,10 +597,6 @@ body {
   font-size: 48px;
   line-height: 59px;
   color: #000000;
-}
-
-.faq__list {
-  min-height: 554px;
 }
 
 .faq__question {

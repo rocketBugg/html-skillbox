@@ -386,6 +386,10 @@
 
 @media (max-width:738px) {
 
+.header {
+  margin-bottom: 30px;
+}
+
 .container {
   padding: 0 15px;
 }
@@ -407,10 +411,9 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 21px;
-  background: url('/img/320pxl-first-bg.jpg');
+  background: url('/img/320pxl-first-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 16px;
   min-height: 308px;
 }
 
@@ -550,6 +553,7 @@
 }
 
 .list-item {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -563,6 +567,7 @@
   background: url('/img/how-we-work-mobile.jpg');
   background-repeat: no-repeat;
   background-position: 0px 81px;
+  background-size: 100% 22%;
 }
 
 .stages-section-title {
@@ -618,7 +623,7 @@
 }
 
 .faq {
-  margin-bottom: 62px;
+  margin-bottom: 60px;
 }
 
 .footer__container {
@@ -689,4 +694,10 @@
   margin-right: 16px;
 }
 
+}
+
+@media (max-width:450px) {
+.container-stages {
+  background-size: 100% 19%;
+}
 }
