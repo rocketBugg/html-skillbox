@@ -1,12 +1,4 @@
 @media (max-width:1920px) {
-.header-left {
-    margin-right: 300px;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 50px;
-}
 
 .first-card__title,
 .second-card__title {
@@ -138,7 +130,6 @@
   display: block;
   position: relative;
   margin-left: 38px;
-  margin-right: 196px;
   border: 1px solid #fff;
   padding: 14px 0px;
   background-color: #fff;
@@ -233,7 +224,7 @@
   text-align: left;
 }
 
-.section-faq__title {
+.faq__title {
   margin-bottom: 30px;
 }
 
@@ -249,7 +240,7 @@
   margin-right: 0px;
 }
 
-.footer_btn {
+.footer__btn {
   padding: 18px 28px;
   max-width: 241px;
 }
@@ -276,7 +267,6 @@
 
 .burger {
   margin-left: 0;
-  margin-right: 150px;
   width: 30px;
   height: 20px;
 }
@@ -338,7 +328,7 @@
   margin-bottom: 44px;
 }
 
-.list__item:not(:last-child) {
+.list-item:not(:last-child) {
   margin-right: 156px;
 }
 
@@ -406,9 +396,6 @@
   border-radius: 0px 0px 16px 16px;
 }
 
-.burger {
-  margin-right: 150px;
-}
 
 .header__logo {
   width: 110px;
@@ -478,7 +465,6 @@
   display: block;
   background: url('/img/2nd-bg-mobile.jpg');
   background-repeat: no-repeat;
-  border: contain;
   min-height: 360px;
   margin-bottom: 32px;
   background-size: 100% 53%;
@@ -563,13 +549,13 @@
   line-height: 29px;
 }
 
-.list__item {
+.list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
 }
 
-.list__item:not(:last-child) {
+.list-item:not(:last-child) {
   margin-right: 44px;
 }
 
@@ -612,7 +598,7 @@
   margin-bottom: 56px;
 }
 
-.section-faq__title {
+.faq__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -646,7 +632,7 @@
   margin-bottom: 20px;
 }
 
-.application__form {
+.application-form {
   width: 100%;
 }
 
@@ -659,7 +645,7 @@
   flex: none;
 }
 
-.footer_btn {
+.footer__btn {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 11px;
@@ -703,10 +689,4 @@
   margin-right: 16px;
 }
 
-}
-
-@media (max-width:425px) {
-  .burger {
-    margin-right: 70px;
-  }
 }

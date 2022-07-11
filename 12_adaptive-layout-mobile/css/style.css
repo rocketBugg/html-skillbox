@@ -61,37 +61,37 @@ body {
   display: none;
 }
 
-.header__container {
-  justify-content: space-between;
-  margin: 0 auto;
-  align-items: center;
-  background: #FFFFFF;
-  padding: 38px 75px;
-  min-width: 320px;
-  max-height: 100px;
+.header {
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
   margin-bottom: 50px;
 }
 
-/* .header-left {
-  margin-right: 280px;
-} */
+.header__container {
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding: 38px 20px;
+  min-width: 320px;
+  max-height: 100px;
+
+}
+
+.header-right {
+  align-items: center;
+  justify-content: space-between;
+}
 
 .header__list {
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 85px;
+  gap: 86px;
 }
 
-/* .header__list-item:not(:last-child){
-  margin-right: 85px;
-} */
-
-/* .header__list-item:last-child {
-  margin-right: 260px;
-} */
+.header__list-item:last-child {
+  margin-right: 30px;
+}
 
 .header__list-item {
   font-family: 'Montserrat';
@@ -103,21 +103,21 @@ body {
   flex: none;
 }
 
-.nav__link:focus {
-    outline: 2px solid #FF9900;
-    outline-offset: 5px;
+.nav-link:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 5px;
 }
 
-.nav__link:hover {
-    outline:none;
-    border-bottom: 2px solid #FF9900;
-    transition:  0.5s ease;
+.nav-link:hover {
+  outline:none;
+  border-bottom: 2px solid #FF9900;
+  transition:  0.5s ease;
 }
 
-.nav__link:active {
-    border:none;
-    border-bottom: 2px solid #E1670E;
-    color: #E1670E;
+.nav-link:active {
+  border:none;
+  border-bottom: 2px solid #E1670E;
+  color: #E1670E;
 }
 
 .search-btn {
@@ -423,7 +423,7 @@ body {
   justify-content: unset;
 }
 
-.list__item-one {
+.list-item-one {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -432,7 +432,7 @@ body {
   color: #E1670E;
 }
 
-.list__item-two {
+.list-item-two {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -441,7 +441,7 @@ body {
   color: #000000;
 }
 
-.list__item-three {
+.list-item-three {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -450,7 +450,7 @@ body {
   color: #000000;
 }
 
-.list__item-four {
+.list-item-four {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -459,29 +459,29 @@ body {
   color: #000000;
 }
 
-.list__item:not(:last-child) {
+.list-item:not(:last-child) {
   margin-right: 85px;
 }
 
-.list__item {
+.list-item {
   margin-bottom: 45px;
 }
 
-.link__item {
+.link-item {
   transition: outline 0.5s ease, color 0.5s ease ;
 }
 
-.link__item:focus {
+.link-item:focus {
   outline: 2px solid #FF9900;
   outline-offset: 5px;
 }
 
-.link__item:hover {
+.link-item:hover {
   color: #FF9900;
   outline: none;
 }
 
-.link__item:active {
+.link-item:active {
   outline: none;
   color: #E1670E;
 }
@@ -526,17 +526,15 @@ body {
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
-  transition: background 0.5s ease, ;
+  transition: background 0.5s ease;
 }
 
 .btn-more:focus {
   background: #FFB84D;
-
 }
 
 .btn-more:hover {
   background: #FFB84D;
-
 }
 
 .btn-more:active {
@@ -590,7 +588,7 @@ body {
   top: 12px;
 }
 
-.section-faq__title {
+.faq__title {
   margin: 0;
   margin-bottom: 32px;
   font-family: 'Montserrat';
@@ -679,7 +677,6 @@ body {
   justify-content: space-between;
   padding: 44px 50px 50px 66px;
   background-color: #000000;
-
 }
 
 .footer-left {
@@ -692,15 +689,12 @@ body {
 }
 
 .footer-center {
-  /* width: 46%; */
-  /* align-items: center; */
   margin-right: 236px;
 }
 
 .footer-right {
   display: flex;
   margin-top: 87px;
-  /* width: 33%; */
   max-width: 363px;
 }
 
@@ -796,7 +790,7 @@ body {
   color: #CACACA;
 }
 
-.application__form {
+.application-form {
   flex-direction: column;
   align-items: center;
 }
@@ -908,7 +902,7 @@ body {
   color: #FFFFFF;
 }
 
-.footer_btn {
+.footer__btn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -916,6 +910,7 @@ body {
   margin-right: 22px;
   padding: 17px 52px;
   gap: 10px;
+  border: none;
   border-radius: 16px;
   background: #FF9900;
   font-family: 'Montserrat';
@@ -928,11 +923,11 @@ body {
   color: #FFFFFF;
 }
 
-.footer_btn:focus, .footer_btn:hover {
+.footer__btn:focus, .footer__btn:hover {
   background: #FFB84D;
 }
 
-.footer_btn:active {
+.footer__btn:active {
   background: #E1670E;
 }
 

@@ -17,7 +17,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container flex">
+    <div class="container header__container flex">
       <button class="btn-reset burger">
         <span class="burger__line">
         </span>
@@ -58,38 +58,37 @@
             </svg>
         </a>
       </div>
-      <div class="header-center">
+
+      <div class="header-right flex">
         <nav class="header__nav">
           <ul class="list-reset flex header__list">
             <li class="header__list-item">
-              <a class="nav__link" href="#about-us">
+              <a class="nav-link" href="#about-us">
                 О нас
               </a>
             </li>
             <li class="header__list-item">
-              <a class="nav__link" href="#projects">
+              <a class="nav-link" href="#projects">
                 Проекты
               </a>
             </li>
             <li class="header__list-item">
-              <a class="nav__link" href="#">
+              <a class="nav-link" href="#">
                 Этапы
               </a>
             </li>
             <li class="header__list-item">
-              <a class="nav__link" href="#">
+              <a class="nav-link" href="#">
                 Отзывы
               </a>
             </li>
             <li class="header__list-item">
-              <a class="nav__link" href="#">
+              <a class="nav-link" href="#">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
-      </div>
-      <div class="header-right">
         <button class="search-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031"
@@ -180,23 +179,23 @@
             Как мы работаем
           </h2>
           <ul class="stages__list list-reset flex">
-            <li class="list__item-one list__item">
-              <a class="link__item" href="#">
+            <li class="list-item-one list-item">
+              <a class="link-item" href="#">
                 1 шаг
               </a>
             </li>
-            <li class="list__item-two list__item">
-              <a class="link__item" href="#">
+            <li class="list-item-two list-item">
+              <a class="link-item" href="#">
                 2 шаг
               </a>
             </li>
-            <li class="list__item-three list__item">
-              <a class="link__item" href="#">
+            <li class="list-item-three list-item">
+              <a class="link-item" href="#">
                 3 шаг
               </a>
             </li>
-            <li class="list__item-four list__item">
-              <a class="link__item" href="#">
+            <li class="list-item-four list-item">
+              <a class="link-item" href="#">
                 4 шаг
               </a>
             </li>
@@ -229,7 +228,7 @@
     <section class="faq">
       <div class="container">
         <div class="faq-container">
-          <h2 class="section-faq__title">
+          <h2 class="faq__title">
             Часто задаваемые вопросы
           </h2>
           <ul class="faq__list list-reset">
@@ -340,7 +339,7 @@
               </a>
             </li>
           </ul>
-          <div class="flex social__links">
+          <div class="flex social-links">
             <a class="link-ok" href="#">
               <svg class="ok" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -361,12 +360,12 @@
           <h3 class="footer__title">
             Оставить заявку
           </h3>
-          <form class="application__form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <form class="application-form flex" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <input class="name" type="text" id="name-surname" placeholder="Фамилия, имя, отчество*" required>
             <input class="email" type="email" id="mail" placeholder="Email*" required>
             <textarea class="message" id="message" placeholder="Сообщение"></textarea>
             <div class="check-box-container flex">
-              <button class="footer_btn">Отправить данные</button>
+              <button class="footer__btn">Отправить данные</button>
               <div class="checkbox-container">
               <input class="checkbox" name="checkbox" type="checkbox" id="checkbox" checked required>
               <label class="checkbox-txt" for="checkbox">Согласен на обработку данных</label>
