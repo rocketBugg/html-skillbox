@@ -72,6 +72,13 @@
   min-width: 100%;
 }
 
+.tabs-item-first {
+  background: url('/img/how-pic-1024-1.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50% 100%;
+}
+
 .questions {
   width: 100%;
 }
@@ -150,7 +157,28 @@
 }
 
 .menu {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
+  width: 420px;
+  padding-left: 70px;
+  padding-top: 170px;
+  background: #FFF;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 32px 32px;
+  transform: translateX(-100%);
+  z-index: 5;
+  transition: transform 0.5s ease;
+}
+
+.menu.active {
+  transform: translate(0);
+}
+
+.stop-scroll {
+  overflow: hidden;
 }
 
 .header__logo {
@@ -430,7 +458,7 @@
   background: url('/img/how-pic-768-2.jpg');
   background-repeat: no-repeat;
   background-position: top left;
-  background-size: 100% 42%;
+  background-size: 100% 50%;
 }
 
 .tabs-item-third {
@@ -907,28 +935,39 @@
   background: url('/img/how-pic-320-1.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 14%;
+  background-size: 100% 16.5%;
 }
 
 .tabs-item-second {
   background: url('/img/how-pic-320-2.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 18%;
+  background-size: 100% 20.5%;
 }
 
 .tabs-item-third {
   background: url('/img/how-pic-320-3.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 14%;
+  background-size: 100% 16.5%;
 }
 
 .tabs-item-fourth {
   background: url('/img/how-pic-320-4.jpg');
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100% 20%;
+  background-size: 100% 22.5%;
+}
+
+.tabs-nav__btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.stages-section-title {
+  width: 100%;
+  padding-top:170px
 }
 
 }

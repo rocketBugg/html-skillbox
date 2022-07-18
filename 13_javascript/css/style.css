@@ -117,23 +117,7 @@ body {
 }
 
 .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 808px;
-  width: 420px;
-  padding-left: 70px;
-  padding-top: 170px;
-  background: #FFF;
-  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 32px 32px;
-  transform: translateX(-100%);
-  z-index: 5;
-  transition: transform 0.5s ease;
-}
-
-.menu.active {
-  transform: translate(0);
+  display: none;
 }
 
 .menu li {
@@ -150,9 +134,6 @@ body {
   margin-bottom: 60px;
 }
 
-.stop-scroll {
-  overflow: hidden;
-}
 
 .header {
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
@@ -230,10 +211,24 @@ body {
   outline: 2px solid #FF9900;
 }
 
-.search-btn:hover{
-  fill: #FF9900;
+.search-btn:hover, .search-btn:hover path{
   stroke: #FF9900;
   outline: none;
+  transition: 0.5s ease;
+}
+
+.search-btn:hover rect {
+  fill: #FF9900;
+  transition: 0.5s ease;
+}
+
+.search-btn:active, .search-btn:active path {
+  outline: none;
+  stroke: #FF9900;
+}
+
+.search-btn:active rect{
+  fill: #FF9900;
 }
 
 .search-form {
@@ -299,6 +294,11 @@ body {
 .search-form__send:hover path, .search-form__send:hover,.search-form__send:active, .search-form__send:active path {
   outline: none;
   stroke: #FF9900;
+  transition: 0.5s ease;
+}
+
+.search-form__send:hover rect, .search-form__send:active rect {
+  fill: #FF9900;
   transition: 0.5s ease;
 }
 
@@ -652,6 +652,9 @@ background-size: cover;
 }
 
 .tabs-nav__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
   margin-bottom: 45px;
   list-style: none;
 }
