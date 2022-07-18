@@ -211,10 +211,16 @@ body {
   outline: 2px solid #FF9900;
 }
 
-.search-btn:hover path, .search-btn:hover{
+.search-btn:hover{
   stroke: #FF9900;
   outline: none;
   transition: stroke 0.5s ease;
+}
+
+.search-btn:hover path{
+  stroke: #FF9900;
+  outline: none;
+  transition: stroke 0.2s ease;
 }
 
 .search-btn:hover rect {
@@ -288,45 +294,38 @@ body {
   transition: stroke 0.5s ease, outline 0.5s ease;
 }
 
-.search-form__send:focus, .search-form__send:focus path {
+.search-form__send:focus {
   outline: 2px solid #FF9900;
-  outline-offset: 4px;
-  stroke: #000000;
-  transition: 0.5s ease;
 }
 
-.search-form__send:hover path, .search-form__send:hover,.search-form__send:active, .search-form__send:active path {
-  outline: none;
+.search-form__send:hover{
   stroke: #FF9900;
-  transition: 0.5s ease;
+  outline: none;
+  transition: stroke 0.5s ease;
 }
 
-.search-form__send:hover rect, .search-form__send:active rect {
+.search-form__send:hover path{
+  stroke: #FF9900;
+  outline: none;
+  transition: stroke 0.2s ease;
+}
+
+.search-form__send:hover rect {
   fill: #FF9900;
-  transition: 0.5s ease;
-}
-
-.search-form__close:focus {
-  outline: 1px solid #FF9900;
-  outline-offset: 1px;
-}
-
-.search-form__close:focus circle, .search-form__close:focus rect {
   outline: none;
-  stroke: #CACACA;
-  transition: 0.5s ease;
+  transition: fill 0.5s ease;
 }
 
-.search-form__close:hover circle,.search-form__close:hover rect, .search-form__close:hover  {
+.search-form__send:active, .search-form__send:active path {
   outline: none;
-  stroke: #FF9900;
-  transition: 0.5s ease;
-}
-
-.search-form__close:active circle, .search-form__close:active rect, .search-form__close:active  {
-  outline: none;
+  border: none;
   stroke: #000000;
-  transition: 0.5s ease;
+}
+
+.search-form__send:active rect{
+  fill: #000000;
+  outline: none;
+  border: none;
 }
 
 /* main */
