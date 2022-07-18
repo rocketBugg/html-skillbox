@@ -10,10 +10,6 @@
   min-width: 140%;
 }
 
-.stages__title-descr {
-  width: 50%;
-}
-
 .footer-left {
   margin-right: 93px;
 }
@@ -43,10 +39,10 @@
   padding: 0 50px;
 }
 
-.stages__title-descr {
+/* .stages__title-descr {
   max-width: 437px;
   align-self: center;
-}
+} */
 
 .container-projects {
   flex-wrap: wrap;
@@ -72,12 +68,12 @@
   min-width: 100%;
 }
 
-.tabs-item-first {
+/* .tabs-item-first {
   background: url('/img/how-pic-1024-1.jpg');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 50% 100%;
-}
+} */
 
 .questions {
   width: 100%;
@@ -246,7 +242,43 @@
   min-width: 101%;
 }
 
-.tabs-item-first {
+.right-descr-first-1920 {
+  display: none;
+}
+
+.right-descr-second-1920 {
+  display: none;
+}
+
+.right-descr-third-1920 {
+  display: none;
+}
+
+.right-descr-fourth-1920 {
+  display: none;
+}
+
+.right-descr-first-1024 {
+  display: flex;
+  align-items: center;
+}
+
+.right-descr-second-1024 {
+  display: flex;
+  align-items: center;
+}
+
+.right-descr-third-1024 {
+  display: flex;
+  align-items: center;
+}
+
+.right-descr-fourth-1024 {
+  display: flex;
+  align-items: center;
+}
+
+/* .tabs-item-first {
   background: url('/img/how-pic-1024-1.jpg');
   background-repeat: no-repeat;
   background-position: right center;
@@ -272,10 +304,10 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 50% 100%;
-}
+} */
 
 .stages-section-title {
-  width: 50%;
+  width: 100%;
 }
 
 .stages {
@@ -447,7 +479,51 @@
   margin-right: 156px;
 }
 
-.tabs-item-first {
+.left-descr {
+  width: 100%;
+}
+
+.right-descr {
+  width: 100%;
+}
+
+.tabs-item-descr {
+  flex-direction: column-reverse;
+}
+
+.right-descr-first-1024 {
+  display: none;
+}
+
+.right-descr-second-1024 {
+  display: none;
+}
+
+.right-descr-third-1024 {
+  display: none;
+}
+
+.right-descr-fourth-1024 {
+  display: none;
+}
+
+.right-descr-first-768 {
+  display: flex;
+}
+
+.right-descr-second-768 {
+  display: flex;
+}
+
+.right-descr-third-768 {
+  display: flex;
+}
+
+.right-descr-fourth-768 {
+  display: flex;
+}
+
+/* .tabs-item-first {
   background: url('/img/how-pic-768-1.jpg');
   background-repeat: no-repeat;
   background-position: top left;
@@ -473,7 +549,7 @@
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100% 42%;
-}
+} */
 
 .tabs-nav {
   justify-content: space-between;
@@ -484,7 +560,7 @@
 }
 
 .stages-section-title{
-  padding-top: 322px;
+  padding-top: 32px;
 }
 
 .stages__title-descr {
@@ -719,7 +795,7 @@
   margin-right: 44px;
 }
 
-.tabs-item-first {
+/* .tabs-item-first {
   background-size: 100% 21%;
 }
 
@@ -733,10 +809,10 @@
 
 .tabs-item-fourth {
   background-size: 100% 21%;
-}
+} */
 
 .stages-section-title {
-  padding-top: 133px;
+  width: 100%;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 18px;
@@ -931,7 +1007,7 @@
   margin-bottom: 16px;
 }
 
-.tabs-item-first {
+/* .tabs-item-first {
   background: url('/img/how-pic-320-1.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -957,7 +1033,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 22.5%;
-}
+} */
 
 .tabs-nav__btn {
   font-weight: 400;
@@ -967,7 +1043,43 @@
 
 .stages-section-title {
   width: 100%;
-  padding-top:170px
+  padding-top:18px
+}
+
+.right-descr-first-768 {
+  display: none;
+}
+
+.right-descr-second-768 {
+  display: none;
+}
+
+.right-descr-third-768 {
+  display: none;
+}
+
+.right-descr-fourth-768 {
+  display: none;
+}
+
+.right-descr-first-320 {
+  display: flex;
+  justify-content: center;
+}
+
+.right-descr-second-320 {
+  display: flex;
+  justify-content: center;
+}
+
+.right-descr-third-320 {
+  display: flex;
+  justify-content: center;
+}
+
+.right-descr-fourth-320 {
+  display: flex;
+  justify-content: center;
 }
 
 }

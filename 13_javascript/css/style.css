@@ -211,24 +211,28 @@ body {
   outline: 2px solid #FF9900;
 }
 
-.search-btn:hover, .search-btn:hover path{
+.search-btn:hover path, .search-btn:hover{
   stroke: #FF9900;
   outline: none;
-  transition: 0.5s ease;
+  transition: stroke 0.5s ease;
 }
 
 .search-btn:hover rect {
   fill: #FF9900;
-  transition: 0.5s ease;
+  outline: none;
+  transition: fill 0.5s ease;
 }
 
 .search-btn:active, .search-btn:active path {
   outline: none;
+  border: none;
   stroke: #FF9900;
 }
 
 .search-btn:active rect{
   fill: #FF9900;
+  outline: none;
+  border: none;
 }
 
 .search-form {
@@ -377,6 +381,11 @@ background-size: cover;
   margin-right: 20px;
 }
 
+.swiper-pagination-bullet:hover {
+  background: #FFE4E1;
+  transition: background 1s ease;
+}
+
 .swiper-pagination-bullet-active {
   background: #FFFFFF;
 }
@@ -426,17 +435,20 @@ background-size: cover;
 
 .order-btn:focus {
   background: #FFB84D;
-  outline: 1px solid #FFB84D;
+  outline: none;
+  border: none;
 }
 
 .order-btn:hover {
   background: #FFB84D;
-  outline: 1px solid #FFB84D;
+  outline: none;
+  border: none;
 }
 
 .order-btn:active {
   background: #E1670E;
-  outline: 1px solid #E1670E;
+  outline: none;
+  border: none;
 }
 
 /* About-us */
@@ -529,17 +541,18 @@ background-size: cover;
 
 .btn-about-us:focus {
   background: #FF9900;
-  outline: 1px solid #FF9900;
+  outline: none;
 }
 
 .btn-about-us:hover {
   background: #FF9900;
-  outline: 1px solid #FF9900;
+  outline: none;
 }
 
 .btn-about-us:active {
   background: #E1670E;
-  outline: 1px solid #E1670E;
+  outline: none;
+  border: #E1670E;
 }
 
 .right-cards {
@@ -699,32 +712,59 @@ background-size: cover;
   display: block;
 }
 
-.tabs-item-first {
-  background: url('/img/how-we-work-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 48% 100%;
+.tabs-item-descr {
+  display: flex;
+  justify-content: space-between;
 }
 
-.tabs-item-second {
+.left-descr {
+  width: 50%;
+}
+
+.right-descr {
+  width: 45%;
+  align-items: center;
+  display: flex;
+}
+
+
+.right-descr-first-768,.right-descr-first-320 , .right-descr-first-1024 {
+  display: none;
+}
+
+.right-descr-second-1024, .right-descr-second-768, .right-descr-second-320 {
+  display: none;
+}
+
+.right-descr-third-1024, .right-descr-third-768, .right-descr-third-320 {
+  display: none;
+}
+
+.right-descr-fourth-1024, .right-descr-fourth-768, .right-descr-fourth-320 {
+  display: none;
+}
+
+.right-descr-first, .right-descr-second{
+  /* background: url('/img/how-we-work-bg.jpg');
+  background-size: cover; */
+  object-fit: cover;
+}
+
+.right-descr-first-1920
+
+.right-descr-second {
   background: url('/img/how-we-work-1920-2.jpg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 48% 100%;
+  background-size: cover;
 }
 
-.tabs-item-third {
-  background: url('/img/how-we-work-1920-3.jpg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 48% 100%;
+.right-descr-third {
+  background: url('/img/how-we-work-1920-2.jpg');
+  background-size: cover;
 }
 
-.tabs-item-fourth {
-  background: url('/img/how-we-work-1920-4.jpg');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 48% 100%;
+.right-descr-fourth {
+  background: url('/img/how-we-work-1920-2.jpg');
+  background-size: cover;
 }
 
 .stages__list {
