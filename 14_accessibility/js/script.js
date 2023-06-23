@@ -4,13 +4,32 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   effect: "fade",
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
   },
 
+  // aria-label
+  a11y: {
+    paginationBulletMessage: 'Перейти к слайду номер {{index}}',
+  }
 });
+
+//пример слайдера + для читалки как называть пагинацию
+// const swiper = new Swiper('.swiper', {
+//   loop: true,
+
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true
+//   },
+
+//  // area-label
+//   a11y: {
+//     paginationBulletMessage: 'Тут название слайда {{index}}',
+//   }
+// });
 
 document.querySelectorAll('.tabs-nav__btn').forEach(function(tabsBtn){
 
