@@ -191,7 +191,7 @@ body {
   flex: none;
 }
 
-.nav-link:focus {
+.nav-link:focus-visible {
   outline: 2px solid #FF9900;
   outline-offset: 5px;
 }
@@ -220,7 +220,7 @@ body {
   transition: outline 0.5s ease, stroke 0.5s ease, fill 0.5s ease ;
 }
 
-.search-btn:focus {
+.search-btn:focus-visible{
   outline: 2px solid #FF9900;
 }
 
@@ -284,7 +284,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.search-form__input:focus {
+.search-form__input:focus-visible {
   outline: none;
   border: #E1670E;
   border-bottom: 1px solid #E1670E;
@@ -300,6 +300,7 @@ body {
 }
 
 .search-form__close {
+  padding: 0;
   border: none;
   background: #FFFFFF;
   stroke: #CACACA;
@@ -307,7 +308,44 @@ body {
   transition: stroke 0.5s ease, outline 0.5s ease;
 }
 
-.search-form__send:focus {
+.search-form__close:focus-visible{
+  outline: 2px solid #FF9900;
+}
+
+.search-form__close:hover , .search-form__close:hover rect, .search-form__close:hover circle{
+  stroke: #FF9900;
+  outline: none;
+  transition: stroke 0.5s ease;
+}
+
+.search-form__close:hover , .search-form__close:hover rect {
+  fill: #FF9900;
+  transition: fill 0.5s ease;
+}
+
+.search-form__close:hover rect {
+  fill: #FF9900;
+  transition: fill 0,5s ease;
+}
+
+.search-form__close:active {
+
+  stroke: #CACACA;
+}
+
+.search-form__close:active , .search-form__close:active rect, .search-form__close:active circle {
+  stroke: #000000;
+  outline: none;
+  border: none;
+  transition: stroke 0.5s ease;
+}
+
+.search-form__close:active , .search-form__close:active rect {
+  fill: #000000;
+  transition: fill 0.5s ease;
+}
+
+.search-form__send:focus-visible{
   outline: 2px solid #FF9900;
 }
 
@@ -445,7 +483,7 @@ background-size: cover;
   transition: background 0.3s ease, outline 0.5s ease;
 }
 
-.order-btn:focus {
+.order-btn:focus-visible{
   background: #FFB84D;
   outline: none;
   border: none;
@@ -551,7 +589,7 @@ background-size: cover;
   transition: background 0.5s ease, outline 0.5s ease, color 0.5s ease;
 }
 
-.btn-about-us:focus {
+.btn-about-us:focus-visible{
   background: #FF9900;
   outline: none;
   color: #fff;
@@ -702,7 +740,7 @@ background-size: cover;
   color: #E1670E;
 }
 
-.tabs-nav__btn:focus {
+.tabs-nav__btn:focus-visible{
   outline: 2px solid #FF9900;
   outline-offset: 5px;
   color: #000000;
@@ -874,7 +912,7 @@ background-size: cover;
   transition: background 0.5s ease;
 }
 
-.btn-more:focus {
+.btn-more:focus-visible{
   background: #FFB84D;
 }
 
@@ -904,7 +942,7 @@ background-size: cover;
   transition: background 0.5s ease, color 0.5s ease ;
 }
 
-.btn-contract:focus {
+.btn-contract:focus-visible{
   background: #666666;
   border:none;
   color: #FFFFFF;
@@ -1032,7 +1070,7 @@ background-size: cover;
   z-index: 1;
 }
 
-.ui-accordion-header:focus,.ui-accordion-header:focus ellipse, .ui-accordion-header:focus path {
+.ui-accordion-header:focus,.ui-accordion-header:focus-visibleellipse, .ui-accordion-header:focus-visiblepath {
   color: #FF9900;
   fill: #FF9900;
   stroke: #FFFFFF;
@@ -1111,7 +1149,7 @@ background-size: cover;
   transition: outline 0.5s ease, color 0.5s ease;
 }
 
-.footer__link:focus {
+.footer__link:focus-visible{
   outline: 2px solid #FF9900;
 }
 
@@ -1132,7 +1170,7 @@ background-size: cover;
   transition: outline 0.5s ease, fill 0.5s ease;
 }
 
-.link-ok:focus {
+.link-ok:focus-visible{
   outline: 2px solid #FF9900;
 }
 
@@ -1152,7 +1190,7 @@ background-size: cover;
   transition: outline 0.5s ease, fill 0.5s ease;
 }
 
-.link-vk:focus {
+.link-vk:focus-visible{
   outline: 1px solid #FF9900;
 }
 
@@ -1209,7 +1247,7 @@ background-size: cover;
   transition: background 0.5s ease, border 0.5s ease;
 }
 
-.name:focus {
+.name:focus-visible{
   background: #666666;
   outline: none;
   color: #FFFFFF;
@@ -1245,7 +1283,7 @@ background-size: cover;
   transition: background 0.5s ease;
 }
 
-.email:focus {
+.email:focus-visible{
   background: #666666;
   outline: none;
   color: #FFFFFF;
@@ -1281,7 +1319,7 @@ background-size: cover;
   transition: background 0.5s ease;
 }
 
-.message:focus {
+.message:focus-visible{
   background: #666666;
   outline: none;
   color: #FFFFFF;
