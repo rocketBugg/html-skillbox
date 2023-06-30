@@ -8,8 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
 :root {
   --space: 32px;
 }
@@ -21,6 +19,12 @@ a {
 
 p {
   margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 img {
@@ -45,7 +49,7 @@ h6 {
 
 .list-reset {
   list-style: none;
-  margin: 0;
+  padding: 0;
 }
 
 /* glob */
@@ -56,6 +60,7 @@ h6 {
 
 .container {
   max-width: 1110px;
+  padding: 0;
 }
 
 .section__container {
@@ -143,8 +148,11 @@ h6 {
   padding: 0;
   align-items: center;
   gap: 18px;
-  padding-top: 33px;
-  padding-bottom: 36px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url(../img/Group95.png);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .hero__content {
@@ -171,6 +179,7 @@ picture img {
 }
 
 .card-img {
+  width: 100%;
   position: relative;
 }
 
@@ -237,9 +246,18 @@ picture img {
 .about__body {
   padding: 0;
   padding-bottom: 22px;
+  padding-left: 190px;
   gap: 30px;
   justify-content: flex-start;
   align-items: center;
+  background-image: url(../img/Vectarytextureadvantages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.column-content {
+  display: flex;
+  flex-basis: 100%;
 }
 
 .body-left {
@@ -251,11 +269,36 @@ picture img {
 }
 
 .row-content {
+  padding-left: 110px;
   gap: 30px;
   align-items: center;
+  height: 100%;
+}
+
+.card-first {
+  background-image: url(../img/eye-circle.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
+}
+
+.card-second {
+  background-image: url(../img/fingers.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
+}
+
+.card-third {
+  background-image: url(../img/eye-circle3rd.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
 }
 
 .row-descr {
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 700;
@@ -271,7 +314,7 @@ picture img {
 }
 
 .teachers__container {
-  padding-bottom: 42px;
+  padding-bottom: 43px;
 }
 
 .teachers__title {
@@ -289,6 +332,7 @@ picture img {
 .teachers__photo {
   display: flex;
   margin-bottom: 29px;
+  width: 100%;
 }
 
 .teachers__name {
@@ -322,7 +366,7 @@ picture img {
 
 .section-offset {
   padding-top: 74px;
-  padding-bottom: 51px;
+  padding-bottom: 59px;
 }
 
 .courses__title {
@@ -342,6 +386,7 @@ picture img {
 
 .card-body {
   display: flex;
+  min-height: 480px;
   flex-direction: column;
   position: relative;
   background: #EDF0F9;
@@ -349,6 +394,7 @@ picture img {
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   height: 100%;
+
 }
 
 .card-wrapper {
@@ -356,12 +402,11 @@ picture img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  padding: 30px 30px;
   flex-basis: 100%;
 }
 
 .courses__btn {
-  margin-left: 30px;
-  margin-bottom: 30px;
   padding: 21px 59px;
   background: #3F2AFF;
   border: 1px solid #3F2AFF;
@@ -382,9 +427,6 @@ picture img {
 
 .top-card {
   width: 100%;
-  padding-left: 30px;
-  padding-top: 32px;
-  padding-bottom: 50px;
 }
 
 .card__descr {

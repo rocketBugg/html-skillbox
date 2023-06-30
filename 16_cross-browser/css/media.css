@@ -1,11 +1,24 @@
-@media (max-width: 768px) {
+@media (max-width: 1130px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+}
+
+@media (max-width: 1024px) {
   .container {
     max-width: 690px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .hero__container {
     padding-top: 130px;
     padding-bottom: 136px;
+    background-image: url(../img/herobg_768.png);
+    background-repeat: no-repeat;
+    background-position: center right;
   }
 
   .hero__title {
@@ -29,8 +42,6 @@
     max-width: 211px;
   }
 
-
-
   .row-content {
     flex-direction: column;
     align-items: flex-start;
@@ -47,20 +58,40 @@
   }
 
   .about__container {
-    padding-bottom: 77px;
+    padding-bottom: 63px;
+  }
+
+  .about__body {
+    padding-left: 224px;
+    background-image: url(../img/VectarytexturebgAbout.jpg);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  .card-first, .card-second, .card-third {
+    background-position: top left;
+    padding-left: 0;
+    padding-top: 92px;
+  }
+
+  .row-descr {
+    padding-top: 0;
   }
 
   .card__time-descr {
     right: 3%;
   }
 
-  .top-card {
-    padding-top: 28px;
-    padding-bottom: 53px;
+  .card-wrapper {
+    padding: 25px 30px;
   }
 
   .card {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
+  }
+
+  .card-body {
+    min-height: 376px;
   }
 
   .card__title {
@@ -68,13 +99,31 @@
   }
 
   .courses__btn {
+    margin-top: 30px;
     padding: 21px 54px;
+  }
+
+  .section-offset {
+    padding-bottom: 49px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 700px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .body-right {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
   .container {
     max-width: 510px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .header__container {
@@ -95,6 +144,7 @@
   .hero__container {
     padding-top: 78px;
     padding-bottom: 134px;
+    background-image: none;
   }
 
   .hero__content {
@@ -116,10 +166,18 @@
 
   .body-right {
     max-width: 330px;
+    padding-left: 15px;
   }
 
   .about__container {
-    padding-bottom: 54px;
+    padding-bottom: 43px;
+  }
+
+  .about__body {
+    background-image: url(../img/Vectary\ textureabout576px.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 164px;
   }
 
   .teachers__container {
@@ -131,17 +189,16 @@
   }
 
   .top-card {
-    padding: 28px 15px;
-    padding-left: 30px;
+    padding: 0;
   }
 
   .card-body {
+    min-height: 653px;
     margin-bottom: 7px;
   }
 
   .courses__btn {
     padding: 20px 47px;
-    margin-bottom: 30px;
     line-height: 18.75px;
   }
 
@@ -150,9 +207,18 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 515px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 475px) {
   .container {
     max-width: 290px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .header__container {
@@ -194,7 +260,7 @@
 
   .about__container {
     padding-top: 50px;
-    padding-bottom: 6px;
+    padding-bottom: 18px;
   }
 
   .body-left {
@@ -211,10 +277,22 @@
     line-height: 26px;
   }
 
+  .about__body {
+    background-image: none;
+    padding-left: 0;
+  }
+
+  .row-descr {
+    padding-top: 0;
+    padding-bottom: 3px;
+  }
+
   .row-content {
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    background-position: center left;
+    padding-top: 2px;
+    padding-left: 110px;
   }
 
   .column-content {
@@ -248,9 +326,24 @@
 
   .section-offset {
     padding-top: 46px;
+    padding-bottom: 21px;
+  }
+
+  .card-body {
+    min-height: 653px;
+    margin-bottom: 5px;
+  }
+
+  .top-card {
+    padding: 0;
   }
 
   .card__title {
     width: 97%;
+  }
+
+  .courses__btn {
+    padding: 22px 55px;
+    margin-bottom: 0;
   }
 }
