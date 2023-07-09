@@ -1,0 +1,472 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --space: 32px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Roboto', 'sans-serif';
+  background: #FFFFFF;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+}
+
+/* glob */
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0;
+}
+
+.section__container {
+  padding-top: 130px;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* header */
+
+.header {
+  background-color: #3f2aff;
+}
+
+.header__container {
+  padding: 28px 0;
+  justify-content: space-between;
+}
+
+.header__nav {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.nav__list {
+  gap: 56px;
+}
+
+/* hero */
+
+.hero {
+  background-image: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+}
+
+.hero__title {
+  font-family: 'Roboto';
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+.hero__descr {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 61px;
+}
+
+.btn-hero {
+  padding: 24px 76px;
+  border-radius: 20px;
+  gap: 10px;
+  background: #3F2AFF;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.hero__container {
+  padding: 0;
+  align-items: center;
+  gap: 18px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-image: url(../img/Group95.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.hero__content {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.hero__content-right {
+  display: flex;
+}
+
+picture img {
+  object-fit: cover;
+}
+
+/* about */
+
+.about__container {
+  padding-left: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card-img {
+  width: 100%;
+  position: relative;
+}
+
+.card__time-descr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  gap: 5px;
+  z-index: 10;
+}
+
+.section__title {
+  margin-bottom: 18px;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e2b44;
+}
+
+.body-right__title {
+  margin-bottom: 18px;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e2b44;
+}
+
+.section__descr {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666;
+}
+
+.body-right__descr {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666;
+}
+
+.about__body {
+  padding: 0;
+  padding-bottom: 22px;
+  padding-left: 190px;
+  gap: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url(../img/Vectarytextureadvantages-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.column-content {
+  display: flex;
+  flex-basis: 100%;
+}
+
+.body-left {
+  max-width: 160px;
+}
+
+.body-right {
+  max-width: 585px;
+}
+
+.row-content {
+  padding-left: 110px;
+  gap: 30px;
+  align-items: center;
+  height: 100%;
+}
+
+.card-first {
+  background-image: url(../img/eye-circle.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
+}
+
+.card-second {
+  background-image: url(../img/fingers.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
+}
+
+.card-third {
+  background-image: url(../img/eye-circle3rd.jpg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: auto;
+}
+
+.row-descr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666;
+}
+
+/* teachers */
+.teachers {
+  background: #212133;
+}
+
+.teachers__container {
+  padding-bottom: 43px;
+}
+
+.teachers__title {
+  margin-bottom: 24px;
+  padding-top: 75px;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.teachers__photo {
+  display: flex;
+  margin-bottom: 29px;
+  width: 100%;
+}
+
+.teachers__name {
+  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.teachers__descr {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #85859B;
+}
+
+.teachers__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* courses  */
+
+.section-offset {
+  padding-top: 74px;
+  padding-bottom: 59px;
+}
+
+.courses__title {
+  margin-bottom: 23px;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2e2b44;
+}
+
+.card {
+  margin-bottom: 26px;
+}
+
+.card-body {
+  display: flex;
+  min-height: 480px;
+  flex-direction: column;
+  position: relative;
+  background: #EDF0F9;
+  border: 1px solid #EDF0F9;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  height: 100%;
+
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px 30px;
+  flex-basis: 100%;
+}
+
+.courses__btn {
+  padding: 21px 59px;
+  background: #3F2AFF;
+  border: 1px solid #3F2AFF;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.card__title {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #212133;
+  margin-bottom: 5px;
+}
+
+.top-card {
+  width: 100%;
+}
+
+.card__descr {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #666;
+}
+
+/* footer */
+.footer {
+  background: #2E2B44;
+}
+
+.footer__row {
+  justify-content: center;
+  padding: 26px 0;
+}
+
+.footer__content {
+  display: flex;
+  gap: 32px;
+}
+
+.reserved {
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2E2B44;
+}
+
+.reserved__link {
+  color: #3F2AFF;
+}
